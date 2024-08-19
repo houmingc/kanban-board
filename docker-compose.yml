@@ -1,6 +1,5 @@
-version: '3'
+version: "3"
 services:
-
   kanban-postgres:
     image: "postgres:9.6-alpine"
     container_name: kanban-postgres
@@ -23,7 +22,7 @@ services:
       - POSTGRES_PASSWORD=kanban
     ports:
       - 8080:8080
-    links:
+    depends_on:
       - kanban-postgres
 
   kanban-ui:
@@ -31,9 +30,8 @@ services:
     container_name: kanban-ui
     ports:
       - 4200:80
-    links:
+    depends_on:
       - kanban-app
-
 
 volumes:
   kanban-data:

@@ -1,4 +1,8 @@
 ## Kanban Application
+##houming
+I made some small amendment to some file. it is now working.
+server crash when original code is run.
+
 
 This is a simple implementation of a Kanban Board, a tool that helps visualize and manage work. Originally it was first created in Toyota automotive, but nowadays it's widely used in software development.
 
